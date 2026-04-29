@@ -1,53 +1,28 @@
-# Helpdesk Incident Log Manager 📋
+# IT Support Portfolio — Gabriella Rodrigues Ormond
 
-A lightweight command-line tool for logging, tracking, and resolving IT support incidents — no expensive software required.
+Welcome to my IT support portfolio. This repository contains practical tools and scripts I have built to support real IT workflows — from system diagnostics to incident management.
 
-## What it does
+## Projects
 
-- Log new support incidents with user, issue description, category, and priority
-- View all open and resolved incidents in a clean table format
-- Mark incidents as resolved with resolution details and date
-- Saves everything to a local CSV file — easy to share or open in Excel
+### 1. 🖥️ [System Health Checker](./system-health-checker)
+A Python script that performs a quick system health check — disk usage, OS info, and uptime — and generates a clear report. Useful for first-level diagnosis before escalating a ticket.
 
-## Why I built this
+### 2. 🚀 [IT Onboarding Automation](./it-onboarding-automation)
+Automates the generation of personalised IT onboarding checklists for new employees. Ensures every setup follows the same standard and creates a record for sign-off.
 
-In small IT teams, support tickets are often tracked in messy spreadsheets or not tracked at all. This tool gives any IT support technician a simple, consistent way to document incidents, which helps identify recurring problems and improve response times.
+### 3. 📋 [Helpdesk Incident Log Manager](./helpdesk-log-manager)
+A lightweight command-line incident tracker. Log, view, and resolve support tickets — all saved to a CSV file that can be opened in Excel or shared with the team.
 
-## How to run
+---
 
-```bash
-python helpdesk_log.py
-```
+## About me
 
-No external libraries needed — runs with standard Python 3.
+I am an IT Support Technician currently based in Dublin, Ireland. I have hands-on experience in hardware repair, software troubleshooting, user support, and process automation. I am currently studying Control and Automation Engineering at the Federal University of Mato Grosso (UFMT), Brazil.
 
-## Menu options
+- 📧 ormondgabriella@gmail.com
+- 📍 Dublin, Ireland
+- 🔧 IT Support | Hardware | Automation | Python
 
-```
-=============================
-  HELPDESK INCIDENT MANAGER
-=============================
-1. Log new incident
-2. View all incidents
-3. Resolve an incident
-4. Exit
-```
+---
 
-## Example incident log (CSV output)
-
-| ID | Date | User | Issue | Category | Priority | Status | Resolution |
-|----|------|------|-------|----------|----------|--------|------------|
-| 1 | 01/04/2025 | John Murphy | PC won't start | Hardware | High | Resolved | Replaced faulty RAM |
-| 2 | 02/04/2025 | Sara Kelly | Can't access email | Account/Access | Medium | Open | | |
-
-## Skills demonstrated
-
-- Python scripting
-- CSV file handling and data persistence
-- IT service management thinking (incident tracking, categorisation, resolution)
-- Clean CLI interface design
-- Practical solution for a real IT support problem
-
-## Author
-
-Gabriella Rodrigues Ormond — IT Support Technician | Dublin, Ireland
+*All projects in this portfolio are built to solve real problems I have encountered in IT support environments.*
