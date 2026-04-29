@@ -1,60 +1,59 @@
-# System Health Checker 🖥️
+# IT Onboarding Automation 🚀
 
-A lightweight IT support script to quickly assess the health of a machine before opening a repair ticket or escalating an issue.
+A Python script that automates the generation of personalised IT onboarding checklists for new employees.
 
 ## What it does
 
-- Displays full system information (OS, hostname, processor)
-- Checks disk usage and warns if storage is running low (>85%)
-- Shows system uptime
-- Generates a clean, readable report in the terminal
+- Asks for the new employee's name, department, and email
+- Generates a complete, personalised IT onboarding checklist
+- Saves the checklist as a `.txt` file for the IT team to use and sign off
 
 ## Why I built this
 
-In my IT support work, the first step when a user reports a slow or faulty machine is always a quick health check. Instead of doing this manually every time, I automated the process so any technician can run it in seconds and get a clear overview.
+Every time a new employee joins, the IT team needs to go through the same setup process. Doing this from memory leads to missed steps. This script ensures every onboarding follows the same standard, saves time, and creates a record for each new user.
 
 ## How to run
 
-Make sure you have Python 3 installed, then:
-
 ```bash
-python system_health.py
+python onboarding.py
 ```
 
-## Example output
+You will be prompted to enter:
+- Employee name
+- Department
+- Company email
+- Any additional notes
+
+A `.txt` checklist file will be created automatically.
+
+## Example output file
 
 ```
-==================================================
-   SYSTEM HEALTH CHECK REPORT
-   2025-04-01 10:32:15
-==================================================
+========================================
+  IT ONBOARDING CHECKLIST
+  New Employee: John Murphy
+  Department: Finance
+  Start Date: 01/04/2025
+========================================
 
-[SYSTEM INFO]
-  OS: Linux
-  HOSTNAME: office-pc-01
-  PROCESSOR: Intel Core i5
+HARDWARE SETUP
+  [ ] Assign and prepare laptop/desktop
+  [ ] Connect to company network
+  ...
 
-[DISK USAGE]
-  TOTAL: 238 GB
-  USED: 189 GB
-  FREE: 49 GB
-  PERCENT_USED: 79.4%
-  STATUS: OK
-
-[UPTIME]
-  UPTIME: 6h 22m
-
-[SUMMARY]
-  All checks passed. System looks healthy.
-==================================================
+ACCOUNTS & ACCESS
+  [ ] Create company email: john.murphy@company.ie
+  [ ] Set up MFA
+  ...
+========================================
 ```
 
 ## Skills demonstrated
 
-- Python scripting
-- Use of standard libraries (`platform`, `shutil`, `os`, `datetime`)
-- Practical IT support thinking
-- Clean output formatting for non-technical users
+- Python scripting and user input handling
+- String formatting and file I/O
+- IT process knowledge (onboarding, asset management, account setup)
+- Practical automation for real IT workflows
 
 ## Author
 
