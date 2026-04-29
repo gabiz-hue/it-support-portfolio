@@ -1,59 +1,52 @@
-# IT Onboarding Automation 🚀
+# Helpdesk Incident Log Manager 📋
 
-A Python script that automates the generation of personalised IT onboarding checklists for new employees.
+A lightweight command-line tool for logging, tracking, and resolving IT support incidents — no expensive software required.
 
 ## What it does
 
-- Asks for the new employee's name, department, and email
-- Generates a complete, personalised IT onboarding checklist
-- Saves the checklist as a `.txt` file for the IT team to use and sign off
+- Log new support incidents with user, issue description, category, and priority
+- View all open and resolved incidents in a clean table format
+- Mark incidents as resolved with resolution details and date
+- Saves everything to a local CSV file — easy to share or open in Excel
 
 ## Why I built this
 
-Every time a new employee joins, the IT team needs to go through the same setup process. Doing this from memory leads to missed steps. This script ensures every onboarding follows the same standard, saves time, and creates a record for each new user.
+In small IT teams, support tickets are often tracked in messy spreadsheets or not tracked at all. This tool gives any IT support technician a simple, consistent way to document incidents, which helps identify recurring problems and improve response times.
 
 ## How to run
 
 ```bash
-python onboarding.py
+python helpdesk_log.py
 ```
 
-You will be prompted to enter:
-- Employee name
-- Department
-- Company email
-- Any additional notes
+No external libraries needed — runs with standard Python 3.
 
-A `.txt` checklist file will be created automatically.
-
-## Example output file
+## Menu options
 
 ```
-========================================
-  IT ONBOARDING CHECKLIST
-  New Employee: John Murphy
-  Department: Finance
-  Start Date: 01/04/2025
-========================================
-
-HARDWARE SETUP
-  [ ] Assign and prepare laptop/desktop
-  [ ] Connect to company network
-  ...
-
-ACCOUNTS & ACCESS
-  [ ] Create company email: john.murphy@company.ie
-  [ ] Set up MFA
-  ...
-========================================
+=============================
+  HELPDESK INCIDENT MANAGER
+=============================
+1. Log new incident
+2. View all incidents
+3. Resolve an incident
+4. Exit
 ```
+
+## Example incident log (CSV output)
+
+| ID | Date | User | Issue | Category | Priority | Status | Resolution |
+|----|------|------|-------|----------|----------|--------|------------|
+| 1 | 01/04/2025 | John Murphy | PC won't start | Hardware | High | Resolved | Replaced faulty RAM |
+| 2 | 02/04/2025 | Sara Kelly | Can't access email | Account/Access | Medium | Open | | |
 
 ## Skills demonstrated
 
-- Python scripting and user input handling
-- String formatting and file I/O
-- IT process knowledge (onboarding, asset management, account setup)
-- Practical automation for real IT workflows
+- Python scripting
+- CSV file handling and data persistence
+- IT service management thinking (incident tracking, categorisation, resolution)
+- Clean CLI interface design
+- Practical solution for a real IT support problem
 
 ## Author
 
